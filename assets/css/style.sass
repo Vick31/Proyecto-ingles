@@ -1,0 +1,114 @@
+*
+    margin: 0
+    padding: 0
+    text-decoration: none
+    font-family: Arial, Helvetica, sans-serif
+    box-sizing: border-box
+    overflow: hidden
+    scroll-behavior: smooth
+
+    #container-body
+        display: flex
+        flex-flow: column
+        
+        nav
+            background-color: rgb(0, 0, 0)
+            width: 100vw
+            height: 3rem
+            display: flex
+            flex-flow: row
+            justify-content: space-between
+            padding: 1rem
+            color: #fff
+
+            div
+                ul
+                    display: flex
+                    flex-flow: row
+
+                    li
+                        list-style: none
+                        text-decoration: none
+                        margin-left: 1rem
+                        margin-right: 1rem
+
+                        a
+                            font-size: 12px
+                            color: #fff
+
+        main
+            display: flex
+            flex-flow: column
+            height: calc( 100vh - 3rem )
+
+            #container-main
+                overflow-y: auto
+
+                #home
+                    display: flex
+                    flex-flow: column
+                    justify-content: center
+                    height: 100vh
+                    
+                    .cont-video
+                        position: fixed
+                        width: 100vw
+                        height: 100vh
+                        z-index: -100
+
+                    .cont
+                        display: flex
+                        justify-content: space-around                    
+
+                        .cont-text
+                            width: 44rem
+                            color: #fff
+                            text-shadow: 1px 1px 2px rgba(255, 255, 255, 255.2)
+
+                            h1
+                                font-size: 3.5rem
+
+                        .cont-logo
+
+                            img
+                                width: 16rem
+                                height: 16rem
+                                object-fit: cover
+
+                #services
+                    background-color: #f4f4f4
+                    width: 100vw
+
+                    #servis-aside
+                        margin: 2rem
+                        display: flex
+                        flex-flow: row
+                        justify-content: space-around
+
+                        .services
+                            background-color: #fff
+                            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2)
+                            width: 18rem
+                            height: 10rem
+                            padding: 0.5rem
+                            border-radius: 15px
+                            text-align: center
+
+                            img
+                                width: 10rem
+                                height: 7rem
+                                object-fit: cover
+
+                    div
+                        width: 100vw
+                        overflow-x: auto
+
+                        #content-services
+                            display: flex
+                            flex-flow: row
+                            width: 300vw
+
+                            .servis-main
+                                border: 1px solid red
+                                width: 100vw
+                                height: 80vh
